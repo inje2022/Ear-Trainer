@@ -20,18 +20,18 @@
 <body>
 
     <div class="container-fluid" style="background: rgba(127, 176, 203, 0.5); box-shadow: 3px 3px 3px rgba(127, 176, 203); display:flex;position:relative; width: 100%; height: 10vh; justify-content: space-evenly;">
-       <h1 style="color:#2E498E; font-weight:700; padding:10px; position: absolute;text-align: center; ">Practice</h1>
+       <h1 style="color:#2E498E; font-weight:700; padding:10px; position: absolute;text-align: center; ">C Major</h1>
     </div>
     <section>
     <div class="container" style="border: 1px solid none; width:80%; height:85vh; position:relative; display:flex; justify-content: space-evenly;">
         <div class="row">
-            <div onclick="location.href='practice.html'" class="col" style="position:absolute; top:0; transform:translate(-50%,20%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
+            <div onclick="location.href='cmajor.html'"class="col" style="position:absolute; top:0; transform:translate(-50%,20%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
                 <div class="row">
                     <div class="col" style="padding:10px; font-size:42px; color: #2e498e94; font-weight: semibold;">C Major
                         <div class="col" style="padding-bottom:5px; font-size:27px; color:#2e498e94;">1 Octave 
-                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                                <div class="btn-group me-2" role="group" aria-label="First group">  
-                                <button onclick="sound('./Sound/C.mp3')" type="button" class="btn btn-outline-secondary" style="background-color: #2E498E; color:aliceblue">Do</button>
+                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups" style="position: absoulte;">
+                                <div class="btn-group me-2" role="group" aria-label="First group" style="position: absoulte;">  
+                                <button type="button" class="btn btn-outline-secondary" style="background-color: #2E498E; color:aliceblue">Do</button>
                                 <button type="button" class="btn btn-outline-secondary" style="background-color: #2E498E; color:aliceblue">Re</button>
                                 <button type="button" class="btn btn-outline-secondary" style="background-color: #2E498E; color:aliceblue">Mi</button>
                                 <button type="button" class="btn btn-outline-secondary" style="background-color: #2E498E; color:aliceblue">Fa</button>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="location.href='practice.html'"class="col" style="align-items:center;justify-content: center; position:absolute; top:10px;transform:translate(-50%,120%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
+            <div onclick="location.href='fmajor.html'"class="col" style="align-items:center;justify-content: center; position:absolute; top:10px;transform:translate(-50%,120%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
                 <div class="row">
                     <div class="col" style="padding:10px; font-size:42px; color: #2e498eb6; font-weight: semibold;">F Major
                         <div class="col" style="padding-bottom:5px; font-size:27px; color:#2e498e94;">1 Octave 
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="location.href='practice.html'"class="col" style="position:absolute;top:20px;transform:translate(-50%,220%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
+            <div onclick="location.href='bbmajor.html'"class="col" style="position:absolute;top:20px;transform:translate(-50%,220%); height: 30%; width:80%; background-color:#FAFAFA; box-shadow:0px 2px 2px;">
                 <div class="row">
                     <div class="col" style="padding:10px; font-size:42px; color: #2e498eb6; font-weight: semibold;">Bb Major
                         <div class="col" style="padding-bottom:5px; font-size:27px; color:#2e498e94;">1 Octave 
@@ -92,6 +92,24 @@
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script type="text/javascript">
+        const c = new Audio();
+        c.src ="./Sound/C.mp3";
+        const d = new Audio();
+        d.src ="./Sound/D.mp3";
+        const e = new Audio();
+        e.src ="./Sound/E.mp3";
+        const f = new Audio();
+        f.src ="./Sound/F.mp3";
+        const g = new Audio();
+        g.src ="./Sound/G.mp3";
+        const a = new Audio();
+        a.src ="./Sound/A.mp3";
+        const b = new Audio();
+        b.src ="./Sound/B.mp3";
+        const c4 = new Audio();
+        c4.src ="./Sound/C4.mp3";
+
+    </script>
 </body>
 </html>
